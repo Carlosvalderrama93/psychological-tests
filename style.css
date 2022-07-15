@@ -4,6 +4,9 @@
     --color-treeh: #457b9d;
     --color-four: #a8dadc;
     --color-five: #e63946;
+
+    --base-duration: 600ms;
+    --base-ease: cubic-bezier(0.25, 0.46, 0.45, 0.84);
 }
 
 * {
@@ -24,7 +27,7 @@ header {
     display: flex;
     font-weight: 600;
     justify-content: space-between;
-    height: 5rem;
+    height: 10vh;
     padding: 0 4rem;
     align-items: center;
 }
@@ -48,8 +51,6 @@ header {
     
 }
 
-
-
 .navigation li, a{
     text-decoration: none;
     list-style: none;
@@ -71,7 +72,7 @@ header {
 
 .cover-page{
 text-align: center;
-height: 700px;
+height: 90vh;
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -114,7 +115,7 @@ justify-content: center;
 /*Sliders*/
 .sliders {
     margin: 1rem 0;
-    height: 700px;
+    height: 100vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -195,7 +196,6 @@ justify-content: center;
 }
 
 /*Slides2*/
-
 .slides2 {
     width: 210px;
     height: 350px;
@@ -501,4 +501,59 @@ justify-content: center;
     align-items: center;
     display: flex;
     font-weight: 500;
+  }
+
+
+  /*EL INFILTRADO*/
+
+  .tasks {
+
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tasks h1 {
+    font-size: 4rem;
+    color: var(--color-two);
+    margin: 2rem 0;
+    text-transform: uppercase;
+  }
+
+  .words {
+    margin: 5rem 0;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .word {
+  
+    background-color: var(--color-two);
+    border-radius: 1rem;
+    width: 20%;
+    text-align: center;
+    height: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .word a {
+    color: var(--color-one);
+    font-size: 1.5rem;
+  }
+
+  .tasks button {
+    width: 15rem;
+    height: 3rem;
+    border-radius: 1rem;
+    background-color: var(--color-five);
+    color: var(--color-one);
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-transform: uppercase;
   }
